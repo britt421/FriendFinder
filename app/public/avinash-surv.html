@@ -20,10 +20,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/CSS/style.css">
 </head>
-
-<body style="background-color: #FAF0E6; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight:bolder">
+<body style="background-color:rgba(0,123,255,.25); font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight:bolder">
     <div class="container">
         <div class="jumbotron">
             <h1 style="color: #007bff">
@@ -36,9 +34,10 @@
                 <i class="material-icons" style="margin: -0.5rem; font-size: 36px; position: relative; top: 5px">
                     person
                 </i>
-                Downton Abbey Friend Finder
+                Friend Finder - Survey
             </h1>
-            <p class="lead">Answer a few questions to discover your Downton Abbey personality match</p>
+            <p class="lead">Answer a few questions to let us get your personality profile.... </p>
+            <p class="lead">...and we will find the closest match to you using our friend finder system.</p>
             <hr class="my-4">
             <a class="btn btn-primary btn-lg" href="/" role="home page">
                 <span>
@@ -50,14 +49,14 @@
         <hr>
 
         <div>
-            <h3 style="color: black">About You:</h3>
+            <h3 style="color: #007bff">Basic Info:</h3>
         </div>
         <div class="form-group">
-            <label for="name">Name (Required):</label>
+            <label for="name">Name:</label>
             <input type="text" class="form-control" id="name" placeholder="Name">
         </div>
         <div class="form-group">
-            <label for="email">Link to Photo (Required):</label>
+            <label for="email">Link to Photo:</label>
             <input type="text" class="form-control" id="photoLink" placeholder="Link to photo">
         </div>
         <hr>
@@ -67,20 +66,30 @@
         </div>
         <div>
             <ol id="questionList">
-                <li>Your mind is always buzzing with ideas and plans.</li>
+                <li>Your mind is always buzzing with unexplored ideas and plans.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
-                        <input type="radio" name="q1" value="1"> 
-                        <input type="radio" name="q1" value="2">
-                        <input type="radio" name="q1" value="3">
-                        <input type="radio" name="q1" value="4">
-                        <input type="radio" name="q1" value="5"><br>
-                    <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
-                </div>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
+                        <label class="btn btn-outline-success btn-sm">
+                        <input type="radio" name="options" id="1-1" autocomplete="off"> 1
+                        </label>
+                        <label class="btn btn-outline-success btn-sm">
+                        <input type="radio" name="options" id="1-2" autocomplete="off"> 2
+                        </label>
+                        <label class="btn btn-outline-success btn-sm">
+                        <input type="radio" name="options" id="1-3" autocomplete="off"> 3
+                        </label>
+                        <label class="btn btn-outline-success btn-sm">
+                            <input type="radio" name="options" id="1-4" autocomplete="off"> 4
+                        </label>
+                        <label class="btn btn-outline-success btn-sm">
+                            <input type="radio" name="options" id="1-5" autocomplete="off"> 5
+                        </label>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
+                    </div>
                 <hr>
                 <li>Generally speaking, you rely more on your experience than your imagination.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
                         <label class="btn btn-outline-success btn-sm">
                           <input type="radio" name="options" id="2-1" autocomplete="off"> 1
                         </label>
@@ -96,12 +105,12 @@
                         <label class="btn btn-outline-success btn-sm">
                             <input type="radio" name="options" id="2-5" autocomplete="off"> 5
                         </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
                     </div>
                     <hr>
                 <li>You find it easy to stay relaxed and focused even when there is some pressure.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
                         <label class="btn btn-outline-success btn-sm">
                           <input type="radio" name="options" id="3-1" autocomplete="off"> 1
                         </label>
@@ -117,12 +126,12 @@
                         <label class="btn btn-outline-success btn-sm">
                             <input type="radio" name="options" id="3-5" autocomplete="off"> 5
                         </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
                     </div>
                     <hr>
                 <li>You rarely do something just out of sheer curiosity.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
                         <label class="btn btn-outline-success btn-sm">
                           <input type="radio" name="options" id="3-1" autocomplete="off"> 1
                         </label>
@@ -138,12 +147,12 @@
                         <label class="btn btn-outline-success btn-sm">
                             <input type="radio" name="options" id="3-5" autocomplete="off"> 5
                         </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
                     </div>
                     <hr>
                 <li>People can rarely upset you.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
                         <label class="btn btn-outline-success btn-sm">
                           <input type="radio" name="options" id="3-1" autocomplete="off"> 1
                         </label>
@@ -159,12 +168,12 @@
                         <label class="btn btn-outline-success btn-sm">
                             <input type="radio" name="options" id="3-5" autocomplete="off"> 5
                         </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
                     </div>
                     <hr>
                 <li>It is often difficult for you to relate to other people’s feelings.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
                         <label class="btn btn-outline-success btn-sm">
                           <input type="radio" name="options" id="3-1" autocomplete="off"> 1
                         </label>
@@ -180,12 +189,12 @@
                         <label class="btn btn-outline-success btn-sm">
                             <input type="radio" name="options" id="3-5" autocomplete="off"> 5
                         </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
                     </div>
                     <hr>
                 <li>In a discussion, truth should be more important than people’s sensitivities.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
                         <label class="btn btn-outline-success btn-sm">
                           <input type="radio" name="options" id="3-1" autocomplete="off"> 1
                         </label>
@@ -201,12 +210,12 @@
                         <label class="btn btn-outline-success btn-sm">
                             <input type="radio" name="options" id="3-5" autocomplete="off"> 5
                         </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
                     </div>
                     <hr>
                 <li>You rarely get carried away by fantasies and ideas.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
                         <label class="btn btn-outline-success btn-sm">
                           <input type="radio" name="options" id="3-1" autocomplete="off"> 1
                         </label>
@@ -222,12 +231,12 @@
                         <label class="btn btn-outline-success btn-sm">
                             <input type="radio" name="options" id="3-5" autocomplete="off"> 5
                         </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
                     </div>
                     <hr>
                 <li>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
                         <label class="btn btn-outline-success btn-sm">
                           <input type="radio" name="options" id="3-1" autocomplete="off"> 1
                         </label>
@@ -243,12 +252,12 @@
                         <label class="btn btn-outline-success btn-sm">
                             <input type="radio" name="options" id="3-5" autocomplete="off"> 5
                         </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
                     </div>
                     <hr>
                 <li>You feel more energetic after spending time with a group of people.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
+                        <span style="font-weight:lighter; color: #007bff">Strongly Argee <-----</span>
                         <label class="btn btn-outline-success btn-sm">
                           <input type="radio" name="options" id="3-1" autocomplete="off"> 1
                         </label>
@@ -264,7 +273,7 @@
                         <label class="btn btn-outline-success btn-sm">
                             <input type="radio" name="options" id="3-5" autocomplete="off"> 5
                         </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                        <span style="font-weight:lighter; color: #007bff">----->Strongly Disagree</span>
                     </div>
                     <hr>
             </ol>
