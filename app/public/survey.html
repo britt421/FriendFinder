@@ -11,34 +11,25 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <!-- 2 Bootstrap links (one for jQuery) -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
         crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/CSS/style.css">
+    
 </head>
 
 <body style="background-color: #FAF0E6; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight:bolder">
     <div class="container">
         <div class="jumbotron">
-            <h1 style="color: #007bff">
-                <i class="material-icons" style="margin: -0.5rem; font-size: 36px; position: relative; top: 5px">
-                    person
-                </i>
-                <i class="material-icons" style="margin: -0.5rem; font-size: 30px; position: relative; top: 5px">
-                    whatshot
-                </i>
-                <i class="material-icons" style="margin: -0.5rem; font-size: 36px; position: relative; top: 5px">
-                    person
-                </i>
+            <h1 style="color: #800000" align="center">
                 Downton Abbey Friend Finder
             </h1>
-            <p class="lead">Answer a few questions to discover your Downton Abbey personality match</p>
+            <p class="lead" align="center">Answer a few questions to discover your Downton Abbey personality match</p>
             <hr class="my-4">
             <a class="btn btn-primary btn-lg" href="/" role="home page">
                 <span>
@@ -63,213 +54,123 @@
         <hr>
 
         <div>
-            <h3 style="color: #007bff">Survey Questions:</h3>
+            <h3 style="color: #800000" align="center">Survey Questions:</h3>
         </div>
         <div>
-            <ol id="questionList">
-                <li>Your mind is always buzzing with ideas and plans.</li>
+            <ol id="questionList" align="center">
+                <li>You're a kind spirit.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
-                        <input type="radio" name="q1" value="1"> 
-                        <input type="radio" name="q1" value="2">
-                        <input type="radio" name="q1" value="3">
-                        <input type="radio" name="q1" value="4">
-                        <input type="radio" name="q1" value="5"><br>
+                        <input type="radio" name="q1" value="1"> 1
+                        <input type="radio" name="q1" value="2"> 2
+                        <input type="radio" name="q1" value="3"> 3
+                        <input type="radio" name="q1" value="4"> 4
+                        <input type="radio" name="q1" value="5"> 5
                     <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
                 </div>
                 <hr>
-                <li>Generally speaking, you rely more on your experience than your imagination.</li>
+                <li>Generally speaking, you refrain from comparing yourself to others.</li>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="2-1" autocomplete="off"> 1
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="2-2" autocomplete="off"> 2
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="2-3" autocomplete="off"> 3
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="2-4" autocomplete="off"> 4
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="2-5" autocomplete="off"> 5
-                        </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
+                            <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
+                            <input type="radio" name="q2" value="1"> 1
+                            <input type="radio" name="q2" value="2"> 2
+                            <input type="radio" name="q2" value="3"> 3
+                            <input type="radio" name="q2" value="4"> 4
+                            <input type="radio" name="q2" value="5"> 5
+                        <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
                     </div>
                     <hr>
-                <li>You find it easy to stay relaxed and focused even when there is some pressure.</li>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-1" autocomplete="off"> 1
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-2" autocomplete="off"> 2
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-3" autocomplete="off"> 3
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-4" autocomplete="off"> 4
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-5" autocomplete="off"> 5
-                        </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
-                    </div>
+                <li>Others would describe you as a hardworker.</li>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
+                        <input type="radio" name="q3" value="1"> 1
+                        <input type="radio" name="q3" value="2"> 2
+                        <input type="radio" name="q3" value="3"> 3
+                        <input type="radio" name="q3" value="4"> 4
+                        <input type="radio" name="q3" value="5"> 5
+                    <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
+                </div>
                     <hr>
-                <li>You rarely do something just out of sheer curiosity.</li>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-1" autocomplete="off"> 1
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-2" autocomplete="off"> 2
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-3" autocomplete="off"> 3
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-4" autocomplete="off"> 4
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-5" autocomplete="off"> 5
-                        </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
-                    </div>
+                <li>You rarely think negative thoughts about other people.</li>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
+                        <input type="radio" name="q4" value="1"> 1
+                        <input type="radio" name="q4" value="2"> 2
+                        <input type="radio" name="q4" value="3"> 3
+                        <input type="radio" name="q4" value="4"> 4
+                        <input type="radio" name="q4" value="5"> 5
+                    <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
+                </div>
                     <hr>
-                <li>People can rarely upset you.</li>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-1" autocomplete="off"> 1
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-2" autocomplete="off"> 2
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-3" autocomplete="off"> 3
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-4" autocomplete="off"> 4
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-5" autocomplete="off"> 5
-                        </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
-                    </div>
+                <li>You can find the good in any situation.</li>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
+                        <input type="radio" name="q5" value="1"> 1
+                        <input type="radio" name="q5" value="2"> 2
+                        <input type="radio" name="q5" value="3"> 3
+                        <input type="radio" name="q5" value="4"> 4
+                        <input type="radio" name="q5" value="5"> 5
+                    <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
+                </div>
                     <hr>
-                <li>It is often difficult for you to relate to other people’s feelings.</li>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-1" autocomplete="off"> 1
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-2" autocomplete="off"> 2
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-3" autocomplete="off"> 3
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-4" autocomplete="off"> 4
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-5" autocomplete="off"> 5
-                        </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
-                    </div>
+                <li>You care about other people’s feelings.</li>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
+                        <input type="radio" name="q6" value="1"> 1
+                        <input type="radio" name="q6" value="2"> 2
+                        <input type="radio" name="q6" value="3"> 3
+                        <input type="radio" name="q6" value="4"> 4
+                        <input type="radio" name="q6" value="5"> 5
+                    <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
+                </div>
                     <hr>
-                <li>In a discussion, truth should be more important than people’s sensitivities.</li>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-1" autocomplete="off"> 1
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-2" autocomplete="off"> 2
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-3" autocomplete="off"> 3
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-4" autocomplete="off"> 4
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-5" autocomplete="off"> 5
-                        </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
-                    </div>
+                <li>You believe that honesty is the best policy.</li>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
+                        <input type="radio" name="q7" value="1"> 1
+                        <input type="radio" name="q7" value="2"> 2
+                        <input type="radio" name="q7" value="3"> 3
+                        <input type="radio" name="q7" value="4"> 4
+                        <input type="radio" name="q7" value="5"> 5
+                    <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
+                </div>
                     <hr>
-                <li>You rarely get carried away by fantasies and ideas.</li>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-1" autocomplete="off"> 1
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-2" autocomplete="off"> 2
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-3" autocomplete="off"> 3
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-4" autocomplete="off"> 4
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-5" autocomplete="off"> 5
-                        </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
-                    </div>
+                <li>You spend time in nature.</li>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
+                        <input type="radio" name="q8" value="1"> 1
+                        <input type="radio" name="q8" value="2"> 2
+                        <input type="radio" name="q8" value="3"> 3
+                        <input type="radio" name="q8" value="4"> 4
+                        <input type="radio" name="q8" value="5"> 5
+                    <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
+                </div>
                     <hr>
-                <li>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</li>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-1" autocomplete="off"> 1
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-2" autocomplete="off"> 2
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-3" autocomplete="off"> 3
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-4" autocomplete="off"> 4
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-5" autocomplete="off"> 5
-                        </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
-                    </div>
+                <li>You're good at diffusing tense situations.</li>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
+                        <input type="radio" name="q9" value="1"> 1
+                        <input type="radio" name="q9" value="2"> 2
+                        <input type="radio" name="q9" value="3"> 3
+                        <input type="radio" name="q9" value="4"> 4
+                        <input type="radio" name="q9" value="5"> 5
+                    <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
+                </div>
                     <hr>
-                <li>You feel more energetic after spending time with a group of people.</li>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <span style="font-weight:lighter; color: #007bff">Strongly Disagree <-----</span>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-1" autocomplete="off"> 1
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-2" autocomplete="off"> 2
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                          <input type="radio" name="options" id="3-3" autocomplete="off"> 3
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-4" autocomplete="off"> 4
-                        </label>
-                        <label class="btn btn-outline-success btn-sm">
-                            <input type="radio" name="options" id="3-5" autocomplete="off"> 5
-                        </label>
-                        <span style="font-weight:lighter; color: #007bff">----->Strongly Agree</span>
-                    </div>
+                <li>You are an open-minded person.</li>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <span style="font-weight:lighter; color: black">Strongly Disagree <-----</span>
+                        <input type="radio" name="q10" value="1"> 1
+                        <input type="radio" name="q10" value="2"> 2
+                        <input type="radio" name="q10" value="3"> 3
+                        <input type="radio" name="q10" value="4"> 4
+                        <input type="radio" name="q10" value="5"> 5
+                    <span style="font-weight:lighter; color: black">----->Strongly Agree</span>
+                </div>
                     <hr>
             </ol>
         </div>
-        <div>
+        <div align="center">
             <button id="submitSurvey" type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
         </div>
         <footer style="margin-top: 3rem; margin-bottom: 3rem">
