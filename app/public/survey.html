@@ -177,6 +177,44 @@
             <a href="/api/friends">Friends API</a> | Link to GitHub Repo
         </footer>
     </div>
+
+<script>
+function checkSurvey(){
+    //validate the survey
+    var valid = true;
+    if($("#name").length === 0 || $("#photoLink").length === 0){
+        valid = false;
+    }
+    for (var i = 1; i <=10; i++){
+        if ($('input[name=q'+ i +']:checked').length === 0) {
+            // no radio button was checked
+            valid = false;
+        }
+    }
+    console.log("Valid: " + valid);
+    if(!valid){
+        alert("All feilds are required.");
+    }
+    return valid
+    }
+
+    $("#submitSurvey").on("click", function(){
+           if(checkSurvey()){
+            //    debugger;
+            //    var  newSurvey = {
+            //        name: $("#name").val(),
+            //        photo: $("#photoLink").val(),
+            //        scores : [
+            //        $('input[name=q1]:checked').val(),
+            //        $('input[name=q1]:checked').val()
+            //        ]
+            //    };
+           }
+        //    console.log(newSurvey);
+       });
+
+</script>
     <!-- Modal goes here -->
+
 </body>
 </html>
