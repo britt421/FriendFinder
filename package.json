@@ -1,5 +1,5 @@
 {
-  "name": "friendfinder",
+  "name": "FriendFinder",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/britt421/FriendFinder.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
