@@ -16,20 +16,11 @@ var PORT = 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-console.log(htmlRoutes.home);
-app.get("/", function(request, response){
-    response.sendfile(path.join(__dirname, htmlRoutes.home))
-});
 
-var surveyRoute = app.get("/survey", function(req, res) {
-    res.sendFile(path.join(__dirname, htmlRoutes.survey));
-});
-
-// Displays all individuals
-console.log(apiRoutes.individuals)
-var apiIndividuals =  app.get(apiRoutes.individuals, function(req, res) {
-return res.json(individuals);
-});
+//Requiring Routes (both API and HTML)
+// =============================================================
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 
 // Starts the server to begin listening
