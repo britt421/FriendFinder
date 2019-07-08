@@ -178,35 +178,6 @@
         </footer>
     </div>
 
-    <!-- Modal HTML-->
-
-<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title" id="exampleModalLongTitle">Modal title</div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img class="modalImage" src="" alt="Event Image">
-                <div class="venueName"></div>
-                <div class="venueLocation"></div>
-                <div class="eventtime"></div>
-                <div class="prices"></div>
-                <button class="btn btn-secondary"><a class="eventURL" href="" target="_blank">Buy Tickets</a></button>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
 <script>
 
 //function to verify that survey is filled out completely. If not, an alert pops-up.
@@ -243,26 +214,6 @@ $("#submitSurvey").on("click", function(){
         }
     //    console.log(newSurvey);
     });
-
-//function to display modal
-    function displayModal() {
-    var loops = 0
-    if (eventList.length > 4) {
-        loops = 4;
-    } else {
-        loops = eventList.length;
-    }
-    for (var i = 0; i < loops; i++) {
-        eventList[i];
-    
-//create card and image for modal
-    var image = $("<img class='card-img-top' src=" + eventList[i].image + " alt='Friend Match'>");
-    var DAfriend = $("Your Downton Abbey Friend Match is: " + friendMatch);
-
-//display event data with information regarding event
-    $("#img").append(image);
-    $("#text").append(DAfriend);
-
 </script>
 
 </body>
