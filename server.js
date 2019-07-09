@@ -2,9 +2,9 @@
 // =============================================================
 var express = require("express");
 var path = require("path");
-var individuals =  require("./app/data/friends.js");
-var htmlRoutes = require("./app/routing/htmlRoutes.js");
-var apiRoutes = require("./app/routing/apiRoutes.js")
+// var individuals =  require("./app/data/friends.js");
+// var htmlRoutes = require("./app/routing/htmlRoutes.js");
+// var apiRoutes = require("./app/routing/apiRoutes.js")
 
 
 // Sets up the Express App
