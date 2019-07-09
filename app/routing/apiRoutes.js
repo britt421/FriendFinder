@@ -43,7 +43,7 @@ module.exports = function (app) {
         //The lower the difference the better the match.
         //If tempDiff < totalDiff then it is the best match so far and the var friendMatch will be updated
         //with the index # of the best match (i.e. lowest difference in scores).
-
+            console.log(tempDiff,totalDiff,i);
         if (tempDiff < totalDiff) {
             totalDiff = tempDiff;
             friendMatch = i;
@@ -56,8 +56,9 @@ module.exports = function (app) {
             var amountDiff = 0;
 
         for (var i = 0; i < array1.length; i++) {
-            amountDiff += Math.abs(array1[i] - array2[i]);
+            amountDiff = amountDiff +  Math.abs(array1[i] - array2[i]);
         }
+        console.log(amountDiff);
         return amountDiff;
         }
 
